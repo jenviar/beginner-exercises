@@ -1,0 +1,23 @@
+{
+  "name": "beginner-exercises",
+  "version": "1.0.0",
+  "description": "Some simple tools to practice new methods and mechanisms to be closer to the problems beyond the code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenviar/beginner-exercises.git"
+  },
+  "keywords": [
+    "beginner",
+    "exercises"
+  ],
+  "author": "Jen Viar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jenviar/beginner-exercises/issues"
+  },
+  "homepage": "https://github.com/jenviar/beginner-exercises#readme"
+}
