@@ -4,7 +4,7 @@
   "description": "Some simple tools to practice new methods and mechanisms to be closer to the problems beyond the code",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/jenviar/beginner-exercises/issues"
   },
-  "homepage": "https://github.com/jenviar/beginner-exercises#readme"
+  "homepage": "https://github.com/jenviar/beginner-exercises#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
 }
