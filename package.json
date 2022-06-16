@@ -22,5 +22,9 @@
   "homepage": "https://github.com/jenviar/beginner-exercises#readme",
   "devDependencies": {
     "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "lodash.permutations": "^1.0.0"
   }
 }
