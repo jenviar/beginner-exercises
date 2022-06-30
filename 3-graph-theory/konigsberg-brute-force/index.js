@@ -1,6 +1,8 @@
 'use strict'
 
 const _ = require('lodash')
+const Graph = require('./entity/Graph')
+const Edge = require('./entity/Edge')
 
 const konigsbergBruteForce = (graph) => {
     let previousEdge = null
@@ -34,5 +36,12 @@ const konigsbergBruteForce = (graph) => {
 
     return validEulerianPath
 }
-
+var result = konigsbergBruteForce(new Graph([new Edge('N','W'), 
+new Edge('N', 'W'),
+new Edge('N', 'E'), 
+new Edge('W', 'E'), 
+new Edge('W', 'S'), 
+new Edge('W', 'S'), 
+new Edge('E', 'S')]))
+console.log(result)
 module.exports = konigsbergBruteForce

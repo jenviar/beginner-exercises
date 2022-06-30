@@ -1,6 +1,7 @@
 'use strict'
 
 const fp = require("lodash/fp")
+require('lodash.permutations')
 const _ = require("lodash")
 
 class Graph {
@@ -10,3 +11,4 @@ class Graph {
         this.permutations = _.permutations(this.edges, fp.size(this.edges))
     }
 }
+module.exports = Graph

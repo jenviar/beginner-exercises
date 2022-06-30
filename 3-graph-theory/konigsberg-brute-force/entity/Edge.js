@@ -6,3 +6,4 @@ class Edge {
         this.vB = vertexB
     }
 }
+module.exports = Edge
