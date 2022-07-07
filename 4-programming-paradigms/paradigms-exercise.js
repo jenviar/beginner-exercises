@@ -11,7 +11,7 @@ class Step {
 const recipe = [ new Step('Measure', 5), new Step('Add', 1), new Step('Mix', 2), new Step('Bake', 45)]
 
 //Imperative - Structured programming
-let totalTime = 0;
+/*let totalTime = 0;
 let textRecipe = '';
 
 for (let i = 0; i < recipe.length;  i++){
@@ -20,8 +20,11 @@ for (let i = 0; i < recipe.length;  i++){
 }
 let totalRecipe = textRecipe + '\nTiempo total: ' +totalTime + 'min'
 console.log(totalRecipe);
+*/
+
 
 //Declarative - Functional programming
-const recipeTime = _.reduce((prev,current,0) => prev + current);
-
+const sum = field => recipe => recipe.reduce((acc, curr, i) => (i === 1 ? acc[field] : acc) + curr[field])
+const recipeTime = sum('time')
+console.log(recipeTime(recipe))
 
